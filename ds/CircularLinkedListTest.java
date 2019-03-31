@@ -9,8 +9,10 @@ public class CircularLinkedListTest {
 		cll.add(30);
 		cll.add(40);
 		cll.Queueremove();
+		cll.remove(20);
 		System.out.println("Circular Linked List: ");
 		cll.display();
+		System.out.println("\nSize of the Circular Linked List:"+cll.size());
 	}
 
 }

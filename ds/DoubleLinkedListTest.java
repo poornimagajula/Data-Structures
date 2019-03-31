@@ -13,6 +13,8 @@ public class DoubleLinkedListTest {
 		dll.add(50);
 		System.out.println("Double Linked List Elements are:");
 		dll.display();
+		dll.reverse();
+		System.out.println("\nSize of the Double Linked List:"+dll.size());
 
 	}
 

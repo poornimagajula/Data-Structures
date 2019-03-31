@@ -94,7 +94,10 @@ public class Linkedlist {
 		return count;
 		
 	}
-	
+	public void reverse() {
+		Node n=current;
+		
+	}
 	public void display() {
 		Node n=head;
 		while(n!=null) {

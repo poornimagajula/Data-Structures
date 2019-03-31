@@ -25,7 +25,19 @@ public class CircularDoublyLinkedList {
 		
 	}
 	void stackRemove() {
+		Node n=current;
+		current=n.prev;
+		current.next=head;
 		
+	}
+	public int size() {
+		int count=1;
+		Node n=head;
+		while(head!=n.next) {
+			count++;
+			n=n.next;
+		}
+		return count;
 	}
 	void display() {
 		Node n=head;

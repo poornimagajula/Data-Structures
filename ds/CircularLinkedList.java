@@ -21,6 +21,24 @@ public class CircularLinkedList {
 		current.next=head;
 		
 	}
+	public void remove(int data) {
+		Node n=head,temp=null;
+		while(head!=n.next) {
+			if(n.data==data) {
+				head=n.next;
+			}
+			n.next=head;
+		}
+	}
+	public int size(){
+		Node n=head;
+		int count=1;
+		while(head!=n.next) {
+			count++;
+			n=n.next;
+		}
+		return count;
+	}
 	void display() {
 		Node n=head;
 		while(head!=n.next) {

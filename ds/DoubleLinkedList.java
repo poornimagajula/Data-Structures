@@ -43,8 +43,24 @@ public class DoubleLinkedList {
 			}
 			temp=n;
 			n=n.next;		
+		}		
+	}
+	public void reverse() {
+		Node n=current;
+		System.out.println();
+		while(n!=null) {
+			System.out.print(n.data+"\t");
+			n=n.prev;
 		}
-		
+	}
+	public int size() {
+		Node n=head;
+		int count=0;
+		while(n!=null) {
+			count++;
+			n=n.next;			
+		}
+		return count;
 	}
 
 	// Displaying the Double Linked List Data
